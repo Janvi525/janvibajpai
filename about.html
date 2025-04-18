@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me - Janvi's Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background: #F1EFEC;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      color: #123458;
+      animation: fadeIn 1s ease-in;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #D4C9BE;
+    }
+
+    .about-box {
+      background: #D4C9BE;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: slideIn 1s ease;
+    }
+
+    .about-box h2 {
+      color: #030303;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-box p {
+      line-height: 1.6;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .icon-card {
+      background-color: #123458;
+      border-radius: 12px;
+      padding: 1rem;
+      width: 140px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .icon-card:hover {
+      transform: scale(1.05);
+    }
+
+    .icon-card i {
+      font-size: 2rem;
+      color: #F1EFEC;
+      margin-bottom: 0.5rem;
+    }
+
+    .icon-card span {
+      font-size: 0.95rem;
+      color: #F1EFEC;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Me</h1>
+  </header>
+
+  <div class="about-box">
+    <h2><i class="fas fa-star"></i> Hello! I'm Janvi</h2>
+    <p>
+      I'm a passionate and curious learner who loves blending creativity with tech. Whether it's organizing events, leading student initiatives, or crafting cool mini projects — I enjoy putting my heart into all that I do.
+    </p>
+    <p>
+      I’m currently exploring areas like innovation, design, and management. I love working with people, learning from experiences, and contributing to causes that matter.
+    </p>
+
+    <div class="about-icons">
+      <div class="icon-card">
+        <i class="fas fa-lightbulb"></i>
+        <span>Innovative Thinker</span>
+      </div>
+      <div class="icon-card">
+        <i class="fas fa-users"></i>
+        <span>Team Leader</span>
+      </div>
+      <div class="icon-card">
+        <i class="fas fa-microphone-alt"></i>
+        <span>Public Speaker</span>
+      </div>
+      <div class="icon-card">
+        <i class="fas fa-heart"></i>
+        <span>Empathetic</span>
+      </div>
+      <div class="icon-card">
+        <i class="fas fa-pencil-ruler"></i>
+        <span>Creative</span>
+      </div>
+      <div class="icon-card">
+        <i class="fas fa-rocket"></i>
+        <span>Ambitious</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+<nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Janvi </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="extracurricular.html">Extra-curricular</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+</html>

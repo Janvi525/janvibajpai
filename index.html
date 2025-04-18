@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Janvi Bajpai | ECE (AI-ML) Student</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #F1EFEC;
+      --secondary-color: #D4C9BE;
+      --accent1-color: #123458;
+      --accent2-color: #030303;
+      --text-light: #D4C9BE;
+      --text-dark: #123458;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--accent1-color), var(--accent2-color));
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      background-color: var(--primary-color);
+      color: var(--text-dark);
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid var(--secondary-color);
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .intro {
+      flex: 1;
+      padding-right: 2rem;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+    }
+
+    .intro .tagline {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .section-link {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: var(--secondary-color);
+      border-radius: 16px;
+      color: var(--primary-color);
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section-link:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .section-link a {
+      text-decoration: none;
+      color: var(--accent2-color);
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .section-link i {
+      margin-right: 0.5rem;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: var(--secondary-color);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.3rem;
+      border: 1px solid var(--accent2-color);
+      border-radius: 6px;
+    }
+
+    .contact-form button {
+      margin-top: 1rem;
+      background-color: var(--secondary-color);
+      color: var(--accent2-color);
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: var(--text-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary-color);
+      color: var(--accent1-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="intro">
+      <h1>Janvi Bajpai</h1>
+      <p class="tagline">SY BTech ECE (AI-ML) Student | General Secretary of RIDE’25</p>
+    </div>
+    <img src="profile.jpg" alt="Janvi Bajpai" class="profile-img" />
+  </header>
+
+  <div class="section-link">
+    <li><a href="about.html">About</a></li><i class="fas fa-info-circle"></i> About</a>
+  </div>
+
+  <div class="section-link">
+    <li><a href="extracurricular.html"><i class="fas fa-users"></i> Extra-Curricular Activities</a>
+  </div>
+
+  <div class="section-link">
+    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+  </div>
+
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="query">Your Query:</label>
+      <textarea id="query" name="query" rows="4" required></textarea>
+
+      <!-- CAPTCHA -->
+      <div style="margin-top: 1rem;">
+        <label for="captcha">What is 5 + 2?</label>
+        <input type="text" id="captcha" name="captcha" required>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Me </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="extra-curricular.html">Extra-curricular</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>
+
+
